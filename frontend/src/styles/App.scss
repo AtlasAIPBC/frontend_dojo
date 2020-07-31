@@ -1,0 +1,177 @@
+@import "./variables";
+@import "./components/map";
+@import "./components/login";
+@import "./components/geocoder";
+
+.overlays { pointer-events:none }
+
+.menu-button {
+  top: 14px;
+  right: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.control-panel-boundaries {
+  position: absolute;
+  bottom: 111px;
+  right: -10px;
+  width: 320px;
+  margin: 20px;
+  font-size: 13px;
+  line-height: 2;
+  color: #6b6b76;
+  outline: none;
+  padding: 1px 3px;
+  z-index: 20;
+}
+
+.control-panel-periods {
+  position: absolute;
+  bottom: 196px;
+  right: -10px;
+  width: 320px;
+  margin: 20px;
+  font-size: 13px;
+  line-height: 2;
+  color: #6b6b76;
+  outline: none;
+  padding: 1px 3px;
+  z-index: 20;
+}
+
+.layers-options-container {
+  position: absolute;
+  z-index: 200;
+  bottom: 50px;
+  left: 10px;
+}
+
+.layers-card {
+  border-radius: 2px;
+}
+
+.layer-option-radio {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+
+.show-layers-button {
+  position: absolute;
+  z-index: 100;
+  bottom: 50px;
+  left: 10px;
+}
+
+.tooltip {
+    position: absolute;
+    margin: 8px;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    max-width: 300px;
+    z-index: 9;
+    pointer-events: none;
+    bottom: 345px;
+    left: 2px;
+    font-size: 11px;
+
+    h3, h4, h5 {
+      color: #fff;
+    }
+
+    h3 {
+      font-size: 14px;
+      margin-bottom: 0.5em;
+    }
+
+    h4 {
+      margin-bottom: 0;
+      font-size: 13px;
+    }
+
+    h5 {
+      margin-bottom: 0;
+      font-size: 12px;
+    }
+
+}
+
+.atlas-map-page-logo {
+  position: absolute;
+  z-index: 1;
+  max-width: 160px;
+  opacity: 0.7;
+  margin: 10px;
+  right: 10px;
+}
+
+.map-legend {
+  width: 320px;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  background-color: #ffffff;
+  border-radius: 2px;
+
+  font-size: 13px;
+  line-height: 2;
+  color: #6b6b76;
+  outline: none;
+  padding: 1px 3px;
+
+  .map-legend-title-wrapper{
+    text-align: center;
+
+    .map-legend-title {
+      width: 95%; // Must match numbers-wrapper and legend
+      display: inline-block;
+      text-align: left;
+    }
+  }
+
+  .map-legend-content{
+    text-align: center;
+    margin-top: -13px;
+    line-height: 1;
+
+    .legend {
+      height: 9px;
+      width: 95%; // Must match numbers-wrapper and legend title
+      display: inline-block;
+    }
+
+    .numbers-wrapper {
+      display: inline-block;
+      width: 95%; // Must match legend and legend title
+
+      .numbers {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    
+        li {
+    
+        }
+      }
+    }
+  }
+
+}
+
+.ant-card-body {
+  padding: 0;
+
+  .ant-collapse {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+.mapboxgl-ctrl-geocoder {
+  margin-right: 55px !important;
+}

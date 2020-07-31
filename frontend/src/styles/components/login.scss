@@ -1,0 +1,35 @@
+.login-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $color-atlas-light-blue;
+}
+
+.login-form {
+    width: 300px;
+    height: 300px;
+}
+
+.login-input {
+    height: 30px;
+}
+
+.login-form-button {
+    width: 100%;
+    background-color: $color-atlas-light-green;
+    border: none;
+
+    &:hover {
+      background-color: $color-atlas-dark-green;
+    }
+}
+
+.login-icon {
+    color: #666675;
+}
+
+.atlas-login-page-logo {
+    max-width: 300px;
+    margin-bottom: 40px;
+}

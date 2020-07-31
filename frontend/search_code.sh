@@ -1,0 +1,1 @@
+grep -r -i --include="*\.js*" $1 src/
