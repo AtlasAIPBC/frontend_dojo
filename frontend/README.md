@@ -2,11 +2,11 @@
 
 ### Run it
 
-    git clone https://github.com/AtlasAIPBC/atlas-web.git
+    git clone https://github.com/AtlasAIPBC/frontend_dojo.git
 
-    cd atlas-web
-    yarn 
-    yarn start
+    cd frontend
+    npm install
+    npm run-script start
 
     open http://localhost:3000/
 
@@ -51,50 +51,6 @@ TODO:
 export default {
     mapboxToken: "<Public mapbox access token>",
     ingestionApiBaseUrl: "http://<Server IP>/api/"
-};
-```
-
-#### Firebase
-
-https://console.firebase.google.com/
-
-Click on the Project Overview tab.  Click on the appropriate icon to add an app.  This was a bit hard to find, but looked like "</>" when I was browsing.  You should see a snippet that looks like (strings have been redacted):
-
-```
-<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "REDACTED",
-    authDomain: "REDACTED",
-    databaseURL: "REDACTED",
-    projectId: "REDACTED",
-    storageBucket: "REDACTED",
-    messagingSenderId: "REDACTED"
-  };
-  firebase.initializeApp(config);
-</script>
-```
-
-`src/configuration/fire.js` should look like:
-
-```
-import firebase from 'firebase';
-
-var config = {
-    apiKey: "REDACTED",
-    authDomain: "REDACTED",
-    databaseURL: "REDACTED",
-    projectId: "REDACTED",
-    storageBucket: "REDACTED",
-    messagingSenderId: "REDACTED"
-};
-
-const fire = firebase.initializeApp(config);
-
-export default {
-  fire,
-  fireAuth: fire.auth(),
 };
 ```
 
