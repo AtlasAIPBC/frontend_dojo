@@ -1,0 +1,1364 @@
+{
+    "categories": [
+        {
+            "name": "Economic Indicators", 
+            "subcategories": [
+                {
+                    "data": {
+                        "defaults": {
+                            "name": "Wealth", 
+                            "source": {
+                                "type": "vector"
+                            }, 
+                            "style": {
+                                "id": "Wealth", 
+                                "paint": {
+                                    "fill-color": [
+                                        "interpolate", 
+                                        [
+                                            "linear"
+                                        ], 
+                                        [
+                                            "to-number", 
+                                            [
+                                                "get", 
+                                                "VAL_mean"
+                                            ], 
+                                            0
+                                        ], 
+                                        0, 
+                                        "#2166ab", 
+                                        1, 
+                                        "#4393c3", 
+                                        2, 
+                                        "#92c5de", 
+                                        3, 
+                                        "#d1e5f0", 
+                                        4, 
+                                        "#f7f7f7", 
+                                        5, 
+                                        "#fddcc9", 
+                                        6, 
+                                        "#f4a380", 
+                                        7, 
+                                        "#d6604d", 
+                                        8, 
+                                        "#b4182b"
+                                    ], 
+                                    "fill-opacity": 0.9
+                                }, 
+                                "source": "Wealth", 
+                                "type": "fill"
+                            }, 
+                            "type": "regular"
+                        }, 
+                        "layers": [
+                            {
+                                "boundary": 0, 
+                                "bounds": [
+                                    33.9, 
+                                    -2.1, 
+                                    37.4, 
+                                    2.7
+                                ], 
+                                "latitude": 0.227, 
+                                "longitude": 35.149, 
+                                "mapbox": {
+                                    "id": "mapbox://atlasai.wealth_public", 
+                                    "source": {
+                                        "tileSize": 256, 
+                                        "type": "raster", 
+                                        "url": "mapbox://atlasai.wealth_public"
+                                    }, 
+                                    "style": {
+                                        "id": "Wealth", 
+                                        "layout": {
+                                            "visibility": "visible"
+                                        }, 
+                                        "paint": {}, 
+                                        "source": "mapbox://atlasai.wealth_public", 
+                                        "type": "raster"
+                                    }
+                                }, 
+                                "maxZoom": 15, 
+                                "minZoom": 6.8, 
+                                "period": 1
+                            }, 
+                            {
+                                "boundary": 1, 
+                                "bounds": [
+                                    33.8935689697, 
+                                    -4.67677, 
+                                    41.8550830926, 
+                                    5.506
+                                ], 
+                                "latitude": 0.11976, 
+                                "longitude": 37.4, 
+                                "mapbox": {
+                                    "id": "mapbox://atlasai.aggregates_public", 
+                                    "source": {
+                                        "type": "vector", 
+                                        "url": "mapbox://atlasai.aggregates_public"
+                                    }, 
+                                    "style": {
+                                        "filter": [
+                                            "all", 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "LEVEL"
+                                                ], 
+                                                [
+                                                    "LV2"
+                                                ], 
+                                                true, 
+                                                false
+                                            ], 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "VARNAME"
+                                                ], 
+                                                [
+                                                    "wealth"
+                                                ], 
+                                                true, 
+                                                false
+                                            ]
+                                        ], 
+                                        "id": "mapbox://atlasai.aggregates_public", 
+                                        "layout": {
+                                            "visibility": "visible"
+                                        }, 
+                                        "paint": {
+                                            "fill-color": [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "mask_count"
+                                                ], 
+                                                0, 
+                                                "#9c9c9c", 
+                                                [
+                                                    "interpolate", 
+                                                    [
+                                                        "linear"
+                                                    ], 
+                                                    [
+                                                        "get", 
+                                                        "VAL_mean"
+                                                    ], 
+                                                    0, 
+                                                    "#2166ab", 
+                                                    1, 
+                                                    "#4393c3", 
+                                                    2, 
+                                                    "#92c5de", 
+                                                    3, 
+                                                    "#d1e5f0", 
+                                                    4, 
+                                                    "#f7f7f7", 
+                                                    5, 
+                                                    "#fddcc9", 
+                                                    6, 
+                                                    "#f4a380", 
+                                                    7, 
+                                                    "#d6604d", 
+                                                    8, 
+                                                    "#b4182b"
+                                                ]
+                                            ], 
+                                            "fill-outline-color": "hsla(0, 0%, 0%, 0.36)"
+                                        }, 
+                                        "source": "mapbox://atlasai.aggregates_public", 
+                                        "source-layer": "aggregates_public", 
+                                        "type": "fill"
+                                    }
+                                }, 
+                                "maxZoom": 15, 
+                                "minZoom": 5.8587, 
+                                "period": 1
+                            }, 
+                            {
+                                "boundary": 2, 
+                                "bounds": [
+                                    -27.16874, 
+                                    -34.506184, 
+                                    57.40903, 
+                                    35.273036
+                                ], 
+                                "latitude": 8.1533, 
+                                "longitude": 25.0386, 
+                                "mapbox": {
+                                    "id": "mapbox://atlasai.aggregates_public", 
+                                    "source": {
+                                        "type": "vector", 
+                                        "url": "mapbox://atlasai.aggregates_public"
+                                    }, 
+                                    "style": {
+                                        "filter": [
+                                            "all", 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "LEVEL"
+                                                ], 
+                                                [
+                                                    "LV1"
+                                                ], 
+                                                true, 
+                                                false
+                                            ], 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "VARNAME"
+                                                ], 
+                                                [
+                                                    "wealth"
+                                                ], 
+                                                true, 
+                                                false
+                                            ]
+                                        ], 
+                                        "id": "mapbox://atlasai.aggregates_public", 
+                                        "layout": {
+                                            "visibility": "visible"
+                                        }, 
+                                        "paint": {
+                                            "fill-color": [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "mask_count"
+                                                ], 
+                                                0, 
+                                                "#9c9c9c", 
+                                                [
+                                                    "interpolate", 
+                                                    [
+                                                        "linear"
+                                                    ], 
+                                                    [
+                                                        "get", 
+                                                        "VAL_mean"
+                                                    ], 
+                                                    0, 
+                                                    "#2166ab", 
+                                                    1, 
+                                                    "#4393c3", 
+                                                    2, 
+                                                    "#92c5de", 
+                                                    3, 
+                                                    "#d1e5f0", 
+                                                    4, 
+                                                    "#f7f7f7", 
+                                                    5, 
+                                                    "#fddcc9", 
+                                                    6, 
+                                                    "#f4a380", 
+                                                    7, 
+                                                    "#d6604d", 
+                                                    8, 
+                                                    "#b4182b"
+                                                ]
+                                            ], 
+                                            "fill-outline-color": "hsla(0, 0%, 13%, 0.22)"
+                                        }, 
+                                        "source": "mapbox://atlasai.aggregates_public", 
+                                        "source-layer": "aggregates_public", 
+                                        "type": "fill"
+                                    }
+                                }, 
+                                "maxZoom": 15, 
+                                "minZoom": 2.4, 
+                                "period": 1
+                            }
+                        ], 
+                        "periods": [
+                            {
+                                "id": 1, 
+                                "name": "2003"
+                            }
+                        ]
+                    }, 
+                    "name": "Wealth"
+                }, 
+                {
+                    "data": {
+                        "defaults": {
+                            "name": "Wealth Growth Rate", 
+                            "source": {
+                                "type": "vector"
+                            }, 
+                            "style": {
+                                "id": "Wealth Growth Rate", 
+                                "paint": {
+                                    "fill-color": [
+                                        "interpolate", 
+                                        [
+                                            "linear"
+                                        ], 
+                                        [
+                                            "to-number", 
+                                            [
+                                                "get", 
+                                                "VAL_mean"
+                                            ], 
+                                            0
+                                        ], 
+                                        -0.01, 
+                                        "#5e4fa2", 
+                                        0.016, 
+                                        "#3288bd", 
+                                        0.042, 
+                                        "#66c2a5", 
+                                        0.06800000000000002, 
+                                        "#abdda4", 
+                                        0.09400000000000001, 
+                                        "#e6f598", 
+                                        0.12000000000000001, 
+                                        "#ffffbf", 
+                                        0.14600000000000002, 
+                                        "#fee08b", 
+                                        0.17200000000000001, 
+                                        "#fdae61", 
+                                        0.198, 
+                                        "#f46d43", 
+                                        0.224, 
+                                        "#d53e4f", 
+                                        0.25, 
+                                        "#9e0142"
+                                    ], 
+                                    "fill-opacity": 0.9
+                                }, 
+                                "source": "Wealth Growth Rate", 
+                                "type": "fill"
+                            }, 
+                            "type": "regular"
+                        }, 
+                        "layers": [
+                            {
+                                "boundary": 0, 
+                                "bounds": [
+                                    33.9, 
+                                    -2.1, 
+                                    37.4, 
+                                    2.7
+                                ], 
+                                "latitude": 0.227, 
+                                "longitude": 35.149, 
+                                "mapbox": {
+                                    "id": "mapbox://atlasai.wealthroc_public", 
+                                    "source": {
+                                        "tileSize": 256, 
+                                        "type": "raster", 
+                                        "url": "mapbox://atlasai.wealthroc_public"
+                                    }, 
+                                    "style": {
+                                        "id": "Wealth Growth Rate", 
+                                        "layout": {
+                                            "visibility": "visible"
+                                        }, 
+                                        "paint": {}, 
+                                        "source": "mapbox://atlasai.wealthroc_public", 
+                                        "type": "raster"
+                                    }
+                                }, 
+                                "maxZoom": 15, 
+                                "minZoom": 6.8, 
+                                "period": 1
+                            }, 
+                            {
+                                "boundary": 1, 
+                                "bounds": [
+                                    33.8935689697, 
+                                    -4.67677, 
+                                    41.8550830926, 
+                                    5.506
+                                ], 
+                                "latitude": 0.11976, 
+                                "longitude": 37.4, 
+                                "mapbox": {
+                                    "id": "mapbox://atlasai.aggregates_public", 
+                                    "source": {
+                                        "type": "vector", 
+                                        "url": "mapbox://atlasai.aggregates_public"
+                                    }, 
+                                    "style": {
+                                        "filter": [
+                                            "all", 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "LEVEL"
+                                                ], 
+                                                [
+                                                    "LV2"
+                                                ], 
+                                                true, 
+                                                false
+                                            ], 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "VARNAME"
+                                                ], 
+                                                [
+                                                    "wealthroc"
+                                                ], 
+                                                true, 
+                                                false
+                                            ]
+                                        ], 
+                                        "id": "mapbox://atlasai.aggregates_public", 
+                                        "layout": {
+                                            "visibility": "visible"
+                                        }, 
+                                        "paint": {
+                                            "fill-color": [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "mask_count"
+                                                ], 
+                                                0, 
+                                                "#9c9c9c", 
+                                                [
+                                                    "interpolate", 
+                                                    [
+                                                        "linear"
+                                                    ], 
+                                                    [
+                                                        "get", 
+                                                        "VAL_mean"
+                                                    ], 
+                                                    -0.01, 
+                                                    "#5e4fa2", 
+                                                    0.016, 
+                                                    "#3288bd", 
+                                                    0.042, 
+                                                    "#66c2a5", 
+                                                    0.06800000000000002, 
+                                                    "#abdda4", 
+                                                    0.09400000000000001, 
+                                                    "#e6f598", 
+                                                    0.12000000000000001, 
+                                                    "#ffffbf", 
+                                                    0.14600000000000002, 
+                                                    "#fee08b", 
+                                                    0.17200000000000001, 
+                                                    "#fdae61", 
+                                                    0.198, 
+                                                    "#f46d43", 
+                                                    0.224, 
+                                                    "#d53e4f", 
+                                                    0.25, 
+                                                    "#9e0142"
+                                                ]
+                                            ], 
+                                            "fill-outline-color": "hsla(0, 0%, 15%, 0.66)"
+                                        }, 
+                                        "source": "mapbox://atlasai.aggregates_public", 
+                                        "source-layer": "aggregates_public", 
+                                        "type": "fill"
+                                    }
+                                }, 
+                                "maxZoom": 15, 
+                                "minZoom": 5.8587, 
+                                "period": 1
+                            }, 
+                            {
+                                "boundary": 2, 
+                                "bounds": [
+                                    -27.16874, 
+                                    -34.506184, 
+                                    57.40903, 
+                                    35.273036
+                                ], 
+                                "latitude": 8.1533, 
+                                "longitude": 25.0386, 
+                                "mapbox": {
+                                    "id": "mapbox://atlasai.aggregates_public", 
+                                    "source": {
+                                        "type": "vector", 
+                                        "url": "mapbox://atlasai.aggregates_public"
+                                    }, 
+                                    "style": {
+                                        "filter": [
+                                            "all", 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "LEVEL"
+                                                ], 
+                                                [
+                                                    "LV1"
+                                                ], 
+                                                true, 
+                                                false
+                                            ], 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "VARNAME"
+                                                ], 
+                                                [
+                                                    "wealthroc"
+                                                ], 
+                                                true, 
+                                                false
+                                            ]
+                                        ], 
+                                        "id": "mapbox://atlasai.aggregates_public", 
+                                        "layout": {
+                                            "visibility": "visible"
+                                        }, 
+                                        "paint": {
+                                            "fill-color": [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "mask_count"
+                                                ], 
+                                                0, 
+                                                "#9c9c9c", 
+                                                [
+                                                    "interpolate", 
+                                                    [
+                                                        "linear"
+                                                    ], 
+                                                    [
+                                                        "get", 
+                                                        "VAL_mean"
+                                                    ], 
+                                                    -0.01, 
+                                                    "#5e4fa2", 
+                                                    0.016, 
+                                                    "#3288bd", 
+                                                    0.042, 
+                                                    "#66c2a5", 
+                                                    0.06800000000000002, 
+                                                    "#abdda4", 
+                                                    0.09400000000000001, 
+                                                    "#e6f598", 
+                                                    0.12000000000000001, 
+                                                    "#ffffbf", 
+                                                    0.14600000000000002, 
+                                                    "#fee08b", 
+                                                    0.17200000000000001, 
+                                                    "#fdae61", 
+                                                    0.198, 
+                                                    "#f46d43", 
+                                                    0.224, 
+                                                    "#d53e4f", 
+                                                    0.25, 
+                                                    "#9e0142"
+                                                ]
+                                            ], 
+                                            "fill-outline-color": "hsla(0, 3%, 12%, 0.72)"
+                                        }, 
+                                        "source": "mapbox://atlasai.aggregates_public", 
+                                        "source-layer": "aggregates_public", 
+                                        "type": "fill"
+                                    }
+                                }, 
+                                "maxZoom": 15, 
+                                "minZoom": 2.4, 
+                                "period": 1
+                            }
+                        ], 
+                        "periods": [
+                            {
+                                "id": 1, 
+                                "name": "2003-2018"
+                            }
+                        ]
+                    }, 
+                    "name": "Wealth Growth Rate"
+                }
+            ]
+        }, 
+        {
+            "name": "Agriculture", 
+            "subcategories": [
+                {
+                    "data": {
+                        "defaults": {
+                            "name": "Maize Yield", 
+                            "source": {
+                                "type": "vector"
+                            }, 
+                            "style": {
+                                "id": "Maize Yield", 
+                                "paint": {
+                                    "fill-color": [
+                                        "interpolate", 
+                                        [
+                                            "linear"
+                                        ], 
+                                        [
+                                            "to-number", 
+                                            0, 
+                                            0
+                                        ], 
+                                        2.5, 
+                                        "#00008F", 
+                                        2.5280898876404496, 
+                                        "#000099", 
+                                        2.556179775280899, 
+                                        "#0000A3", 
+                                        2.5842696629213484, 
+                                        "#0000AE", 
+                                        2.6123595505617976, 
+                                        "#0000B8", 
+                                        2.640449438202247, 
+                                        "#0000C2", 
+                                        2.668539325842697, 
+                                        "#0000CC", 
+                                        2.696629213483146, 
+                                        "#0000D6", 
+                                        2.7247191011235956, 
+                                        "#0000E0", 
+                                        2.752808988764045, 
+                                        "#0000EA", 
+                                        2.7808988764044944, 
+                                        "#0000F6", 
+                                        2.808988764044944, 
+                                        "#0000FF", 
+                                        2.837078651685393, 
+                                        "#0009FF", 
+                                        2.865168539325843, 
+                                        "#0015FF", 
+                                        2.893258426966292, 
+                                        "#001FFF", 
+                                        2.9213483146067416, 
+                                        "#0029FF", 
+                                        2.949438202247191, 
+                                        "#0033FF", 
+                                        2.9775280898876404, 
+                                        "#003DFF", 
+                                        3.00561797752809, 
+                                        "#0047FF", 
+                                        3.033707865168539, 
+                                        "#0051FF", 
+                                        3.061797752808989, 
+                                        "#005CFF", 
+                                        3.0898876404494384, 
+                                        "#0066FF", 
+                                        3.1179775280898876, 
+                                        "#0070FF", 
+                                        3.146067415730337, 
+                                        "#007AFF", 
+                                        3.1741573033707864, 
+                                        "#0084FF", 
+                                        3.202247191011236, 
+                                        "#008EFF", 
+                                        3.2303370786516856, 
+                                        "#0098FF", 
+                                        3.258426966292135, 
+                                        "#00A2FF", 
+                                        3.286516853932584, 
+                                        "#00ACFF", 
+                                        3.3146067415730336, 
+                                        "#00B6FF", 
+                                        3.342696629213483, 
+                                        "#00C0FF", 
+                                        3.370786516853933, 
+                                        "#00CBFF", 
+                                        3.398876404494382, 
+                                        "#00D5FF", 
+                                        3.426966292134831, 
+                                        "#00DFFF", 
+                                        3.455056179775281, 
+                                        "#00E9FF", 
+                                        3.4831460674157304, 
+                                        "#00F4FF", 
+                                        3.51123595505618, 
+                                        "#00FEFF", 
+                                        3.539325842696629, 
+                                        "#08FFF7", 
+                                        3.5674157303370784, 
+                                        "#13FFEC", 
+                                        3.595505617977528, 
+                                        "#1DFFE2", 
+                                        3.6235955056179776, 
+                                        "#27FFD8", 
+                                        3.6516853932584272, 
+                                        "#31FFCE", 
+                                        3.6797752808988764, 
+                                        "#3CFFC3", 
+                                        3.7078651685393256, 
+                                        "#46FFB9", 
+                                        3.735955056179775, 
+                                        "#50FFAF", 
+                                        3.764044943820225, 
+                                        "#5AFFA5", 
+                                        3.7921348314606744, 
+                                        "#64FF9B", 
+                                        3.8202247191011236, 
+                                        "#6FFF90", 
+                                        3.8483146067415728, 
+                                        "#79FF87", 
+                                        3.8764044943820224, 
+                                        "#83FF7D", 
+                                        3.904494382022472, 
+                                        "#8CFF73", 
+                                        3.9325842696629216, 
+                                        "#96FF69", 
+                                        3.960674157303371, 
+                                        "#A0FF5F", 
+                                        3.98876404494382, 
+                                        "#ABFF54", 
+                                        4.01685393258427, 
+                                        "#B5FF4A", 
+                                        4.044943820224719, 
+                                        "#BFFF40", 
+                                        4.073033707865168, 
+                                        "#C9FF36", 
+                                        4.101123595505618, 
+                                        "#D3FF2C", 
+                                        4.129213483146067, 
+                                        "#DEFF21", 
+                                        4.157303370786517, 
+                                        "#E7FF18", 
+                                        4.185393258426966, 
+                                        "#F2FF0D", 
+                                        4.213483146067416, 
+                                        "#FDFF02", 
+                                        4.241573033707866, 
+                                        "#FFF900", 
+                                        4.269662921348314, 
+                                        "#FFED00", 
+                                        4.297752808988764, 
+                                        "#FFE300", 
+                                        4.325842696629214, 
+                                        "#FFD900", 
+                                        4.353932584269662, 
+                                        "#FFCF00", 
+                                        4.382022471910112, 
+                                        "#FFC500", 
+                                        4.410112359550562, 
+                                        "#FFBB00", 
+                                        4.438202247191011, 
+                                        "#FFB000", 
+                                        4.466292134831461, 
+                                        "#FFA600", 
+                                        4.49438202247191, 
+                                        "#FF9C00", 
+                                        4.52247191011236, 
+                                        "#FF9200", 
+                                        4.550561797752809, 
+                                        "#FF8800", 
+                                        4.578651685393258, 
+                                        "#FF7F00", 
+                                        4.606741573033708, 
+                                        "#FF7400", 
+                                        4.634831460674157, 
+                                        "#FF6A00", 
+                                        4.662921348314606, 
+                                        "#FF6000", 
+                                        4.691011235955056, 
+                                        "#FF5600", 
+                                        4.719101123595506, 
+                                        "#FF4C00", 
+                                        4.747191011235955, 
+                                        "#FF4100", 
+                                        4.775280898876405, 
+                                        "#FF3700", 
+                                        4.8033707865168545, 
+                                        "#FF2D00", 
+                                        4.831460674157303, 
+                                        "#FF2300", 
+                                        4.859550561797753, 
+                                        "#FF1900", 
+                                        4.8876404494382015, 
+                                        "#FF0E00", 
+                                        4.915730337078651, 
+                                        "#FF0300", 
+                                        4.943820224719101, 
+                                        "#FB0000", 
+                                        4.97191011235955, 
+                                        "#EF0000", 
+                                        5, 
+                                        "#E50000"
+                                    ], 
+                                    "fill-opacity": 0.9
+                                }, 
+                                "source": "Maize Yield", 
+                                "type": "fill"
+                            }, 
+                            "type": "regular"
+                        }, 
+                        "layers": [
+                            {
+                                "boundary": 0, 
+                                "bounds": [
+                                    34.8, 
+                                    0.5, 
+                                    35.5, 
+                                    1.0
+                                ], 
+                                "latitude": 0.4, 
+                                "longitude": 35.65, 
+                                "mapbox": {
+                                    "id": "mapbox://atlasai.yield_public", 
+                                    "source": {
+                                        "tileSize": 256, 
+                                        "type": "raster", 
+                                        "url": "mapbox://atlasai.yield_public"
+                                    }, 
+                                    "style": {
+                                        "id": "Maize Yield", 
+                                        "layout": {
+                                            "visibility": "visible"
+                                        }, 
+                                        "paint": {}, 
+                                        "source": "mapbox://atlasai.yield_public", 
+                                        "type": "raster"
+                                    }
+                                }, 
+                                "maxZoom": 15, 
+                                "minZoom": 2.8, 
+                                "period": 1
+                            }, 
+                            {
+                                "boundary": 1, 
+                                "bounds": [
+                                    33.894818, 
+                                    -0.414174, 
+                                    35.778646, 
+                                    1.405231
+                                ], 
+                                "latitude": 0.4, 
+                                "longitude": 35.65, 
+                                "mapbox": {
+                                    "id": "mapbox://atlasai.aggregates_public", 
+                                    "source": {
+                                        "type": "vector", 
+                                        "url": "mapbox://atlasai.aggregates_public"
+                                    }, 
+                                    "style": {
+                                        "filter": [
+                                            "all", 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "LEVEL"
+                                                ], 
+                                                [
+                                                    "LV2"
+                                                ], 
+                                                true, 
+                                                false
+                                            ], 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "VARNAME"
+                                                ], 
+                                                [
+                                                    "yield"
+                                                ], 
+                                                true, 
+                                                false
+                                            ]
+                                        ], 
+                                        "id": "mapbox://atlasai.aggregates_public", 
+                                        "layout": {
+                                            "visibility": "visible"
+                                        }, 
+                                        "paint": {
+                                            "fill-color": [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "mask_count"
+                                                ], 
+                                                0, 
+                                                "#9c9c9c", 
+                                                [
+                                                    "interpolate", 
+                                                    [
+                                                        "linear"
+                                                    ], 
+                                                    [
+                                                        "get", 
+                                                        "VAL_mean"
+                                                    ], 
+                                                    2.5, 
+                                                    "#00008F", 
+                                                    2.5280898876404496, 
+                                                    "#000099", 
+                                                    2.556179775280899, 
+                                                    "#0000A3", 
+                                                    2.5842696629213484, 
+                                                    "#0000AE", 
+                                                    2.6123595505617976, 
+                                                    "#0000B8", 
+                                                    2.640449438202247, 
+                                                    "#0000C2", 
+                                                    2.668539325842697, 
+                                                    "#0000CC", 
+                                                    2.696629213483146, 
+                                                    "#0000D6", 
+                                                    2.7247191011235956, 
+                                                    "#0000E0", 
+                                                    2.752808988764045, 
+                                                    "#0000EA", 
+                                                    2.7808988764044944, 
+                                                    "#0000F6", 
+                                                    2.808988764044944, 
+                                                    "#0000FF", 
+                                                    2.837078651685393, 
+                                                    "#0009FF", 
+                                                    2.865168539325843, 
+                                                    "#0015FF", 
+                                                    2.893258426966292, 
+                                                    "#001FFF", 
+                                                    2.9213483146067416, 
+                                                    "#0029FF", 
+                                                    2.949438202247191, 
+                                                    "#0033FF", 
+                                                    2.9775280898876404, 
+                                                    "#003DFF", 
+                                                    3.00561797752809, 
+                                                    "#0047FF", 
+                                                    3.033707865168539, 
+                                                    "#0051FF", 
+                                                    3.061797752808989, 
+                                                    "#005CFF", 
+                                                    3.0898876404494384, 
+                                                    "#0066FF", 
+                                                    3.1179775280898876, 
+                                                    "#0070FF", 
+                                                    3.146067415730337, 
+                                                    "#007AFF", 
+                                                    3.1741573033707864, 
+                                                    "#0084FF", 
+                                                    3.202247191011236, 
+                                                    "#008EFF", 
+                                                    3.2303370786516856, 
+                                                    "#0098FF", 
+                                                    3.258426966292135, 
+                                                    "#00A2FF", 
+                                                    3.286516853932584, 
+                                                    "#00ACFF", 
+                                                    3.3146067415730336, 
+                                                    "#00B6FF", 
+                                                    3.342696629213483, 
+                                                    "#00C0FF", 
+                                                    3.370786516853933, 
+                                                    "#00CBFF", 
+                                                    3.398876404494382, 
+                                                    "#00D5FF", 
+                                                    3.426966292134831, 
+                                                    "#00DFFF", 
+                                                    3.455056179775281, 
+                                                    "#00E9FF", 
+                                                    3.4831460674157304, 
+                                                    "#00F4FF", 
+                                                    3.51123595505618, 
+                                                    "#00FEFF", 
+                                                    3.539325842696629, 
+                                                    "#08FFF7", 
+                                                    3.5674157303370784, 
+                                                    "#13FFEC", 
+                                                    3.595505617977528, 
+                                                    "#1DFFE2", 
+                                                    3.6235955056179776, 
+                                                    "#27FFD8", 
+                                                    3.6516853932584272, 
+                                                    "#31FFCE", 
+                                                    3.6797752808988764, 
+                                                    "#3CFFC3", 
+                                                    3.7078651685393256, 
+                                                    "#46FFB9", 
+                                                    3.735955056179775, 
+                                                    "#50FFAF", 
+                                                    3.764044943820225, 
+                                                    "#5AFFA5", 
+                                                    3.7921348314606744, 
+                                                    "#64FF9B", 
+                                                    3.8202247191011236, 
+                                                    "#6FFF90", 
+                                                    3.8483146067415728, 
+                                                    "#79FF87", 
+                                                    3.8764044943820224, 
+                                                    "#83FF7D", 
+                                                    3.904494382022472, 
+                                                    "#8CFF73", 
+                                                    3.9325842696629216, 
+                                                    "#96FF69", 
+                                                    3.960674157303371, 
+                                                    "#A0FF5F", 
+                                                    3.98876404494382, 
+                                                    "#ABFF54", 
+                                                    4.01685393258427, 
+                                                    "#B5FF4A", 
+                                                    4.044943820224719, 
+                                                    "#BFFF40", 
+                                                    4.073033707865168, 
+                                                    "#C9FF36", 
+                                                    4.101123595505618, 
+                                                    "#D3FF2C", 
+                                                    4.129213483146067, 
+                                                    "#DEFF21", 
+                                                    4.157303370786517, 
+                                                    "#E7FF18", 
+                                                    4.185393258426966, 
+                                                    "#F2FF0D", 
+                                                    4.213483146067416, 
+                                                    "#FDFF02", 
+                                                    4.241573033707866, 
+                                                    "#FFF900", 
+                                                    4.269662921348314, 
+                                                    "#FFED00", 
+                                                    4.297752808988764, 
+                                                    "#FFE300", 
+                                                    4.325842696629214, 
+                                                    "#FFD900", 
+                                                    4.353932584269662, 
+                                                    "#FFCF00", 
+                                                    4.382022471910112, 
+                                                    "#FFC500", 
+                                                    4.410112359550562, 
+                                                    "#FFBB00", 
+                                                    4.438202247191011, 
+                                                    "#FFB000", 
+                                                    4.466292134831461, 
+                                                    "#FFA600", 
+                                                    4.49438202247191, 
+                                                    "#FF9C00", 
+                                                    4.52247191011236, 
+                                                    "#FF9200", 
+                                                    4.550561797752809, 
+                                                    "#FF8800", 
+                                                    4.578651685393258, 
+                                                    "#FF7F00", 
+                                                    4.606741573033708, 
+                                                    "#FF7400", 
+                                                    4.634831460674157, 
+                                                    "#FF6A00", 
+                                                    4.662921348314606, 
+                                                    "#FF6000", 
+                                                    4.691011235955056, 
+                                                    "#FF5600", 
+                                                    4.719101123595506, 
+                                                    "#FF4C00", 
+                                                    4.747191011235955, 
+                                                    "#FF4100", 
+                                                    4.775280898876405, 
+                                                    "#FF3700", 
+                                                    4.8033707865168545, 
+                                                    "#FF2D00", 
+                                                    4.831460674157303, 
+                                                    "#FF2300", 
+                                                    4.859550561797753, 
+                                                    "#FF1900", 
+                                                    4.8876404494382015, 
+                                                    "#FF0E00", 
+                                                    4.915730337078651, 
+                                                    "#FF0300", 
+                                                    4.943820224719101, 
+                                                    "#FB0000", 
+                                                    4.97191011235955, 
+                                                    "#EF0000", 
+                                                    5, 
+                                                    "#E50000"
+                                                ]
+                                            ], 
+                                            "fill-outline-color": "hsla(0, 3%, 17%, 0.76)"
+                                        }, 
+                                        "source": "mapbox://atlasai.aggregates_public", 
+                                        "source-layer": "aggregates_public", 
+                                        "type": "fill"
+                                    }
+                                }, 
+                                "maxZoom": 15, 
+                                "minZoom": 2.8, 
+                                "period": 1
+                            }, 
+                            {
+                                "boundary": 2, 
+                                "bounds": [
+                                    33.498054, 
+                                    -4.648245, 
+                                    40.29612, 
+                                    3.435076
+                                ], 
+                                "latitude": 0.4, 
+                                "longitude": 35.65, 
+                                "mapbox": {
+                                    "id": "mapbox://atlasai.aggregates_public", 
+                                    "source": {
+                                        "type": "vector", 
+                                        "url": "mapbox://atlasai.aggregates_public"
+                                    }, 
+                                    "style": {
+                                        "filter": [
+                                            "all", 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "LEVEL"
+                                                ], 
+                                                [
+                                                    "LV1"
+                                                ], 
+                                                true, 
+                                                false
+                                            ], 
+                                            [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "VARNAME"
+                                                ], 
+                                                [
+                                                    "yield"
+                                                ], 
+                                                true, 
+                                                false
+                                            ]
+                                        ], 
+                                        "id": "mapbox://atlasai.aggregates_public", 
+                                        "layout": {
+                                            "visibility": "visible"
+                                        }, 
+                                        "paint": {
+                                            "fill-color": [
+                                                "match", 
+                                                [
+                                                    "get", 
+                                                    "mask_count"
+                                                ], 
+                                                0, 
+                                                "#9c9c9c", 
+                                                [
+                                                    "interpolate", 
+                                                    [
+                                                        "linear"
+                                                    ], 
+                                                    [
+                                                        "get", 
+                                                        "VAL_mean"
+                                                    ], 
+                                                    2.5, 
+                                                    "#00008F", 
+                                                    2.5280898876404496, 
+                                                    "#000099", 
+                                                    2.556179775280899, 
+                                                    "#0000A3", 
+                                                    2.5842696629213484, 
+                                                    "#0000AE", 
+                                                    2.6123595505617976, 
+                                                    "#0000B8", 
+                                                    2.640449438202247, 
+                                                    "#0000C2", 
+                                                    2.668539325842697, 
+                                                    "#0000CC", 
+                                                    2.696629213483146, 
+                                                    "#0000D6", 
+                                                    2.7247191011235956, 
+                                                    "#0000E0", 
+                                                    2.752808988764045, 
+                                                    "#0000EA", 
+                                                    2.7808988764044944, 
+                                                    "#0000F6", 
+                                                    2.808988764044944, 
+                                                    "#0000FF", 
+                                                    2.837078651685393, 
+                                                    "#0009FF", 
+                                                    2.865168539325843, 
+                                                    "#0015FF", 
+                                                    2.893258426966292, 
+                                                    "#001FFF", 
+                                                    2.9213483146067416, 
+                                                    "#0029FF", 
+                                                    2.949438202247191, 
+                                                    "#0033FF", 
+                                                    2.9775280898876404, 
+                                                    "#003DFF", 
+                                                    3.00561797752809, 
+                                                    "#0047FF", 
+                                                    3.033707865168539, 
+                                                    "#0051FF", 
+                                                    3.061797752808989, 
+                                                    "#005CFF", 
+                                                    3.0898876404494384, 
+                                                    "#0066FF", 
+                                                    3.1179775280898876, 
+                                                    "#0070FF", 
+                                                    3.146067415730337, 
+                                                    "#007AFF", 
+                                                    3.1741573033707864, 
+                                                    "#0084FF", 
+                                                    3.202247191011236, 
+                                                    "#008EFF", 
+                                                    3.2303370786516856, 
+                                                    "#0098FF", 
+                                                    3.258426966292135, 
+                                                    "#00A2FF", 
+                                                    3.286516853932584, 
+                                                    "#00ACFF", 
+                                                    3.3146067415730336, 
+                                                    "#00B6FF", 
+                                                    3.342696629213483, 
+                                                    "#00C0FF", 
+                                                    3.370786516853933, 
+                                                    "#00CBFF", 
+                                                    3.398876404494382, 
+                                                    "#00D5FF", 
+                                                    3.426966292134831, 
+                                                    "#00DFFF", 
+                                                    3.455056179775281, 
+                                                    "#00E9FF", 
+                                                    3.4831460674157304, 
+                                                    "#00F4FF", 
+                                                    3.51123595505618, 
+                                                    "#00FEFF", 
+                                                    3.539325842696629, 
+                                                    "#08FFF7", 
+                                                    3.5674157303370784, 
+                                                    "#13FFEC", 
+                                                    3.595505617977528, 
+                                                    "#1DFFE2", 
+                                                    3.6235955056179776, 
+                                                    "#27FFD8", 
+                                                    3.6516853932584272, 
+                                                    "#31FFCE", 
+                                                    3.6797752808988764, 
+                                                    "#3CFFC3", 
+                                                    3.7078651685393256, 
+                                                    "#46FFB9", 
+                                                    3.735955056179775, 
+                                                    "#50FFAF", 
+                                                    3.764044943820225, 
+                                                    "#5AFFA5", 
+                                                    3.7921348314606744, 
+                                                    "#64FF9B", 
+                                                    3.8202247191011236, 
+                                                    "#6FFF90", 
+                                                    3.8483146067415728, 
+                                                    "#79FF87", 
+                                                    3.8764044943820224, 
+                                                    "#83FF7D", 
+                                                    3.904494382022472, 
+                                                    "#8CFF73", 
+                                                    3.9325842696629216, 
+                                                    "#96FF69", 
+                                                    3.960674157303371, 
+                                                    "#A0FF5F", 
+                                                    3.98876404494382, 
+                                                    "#ABFF54", 
+                                                    4.01685393258427, 
+                                                    "#B5FF4A", 
+                                                    4.044943820224719, 
+                                                    "#BFFF40", 
+                                                    4.073033707865168, 
+                                                    "#C9FF36", 
+                                                    4.101123595505618, 
+                                                    "#D3FF2C", 
+                                                    4.129213483146067, 
+                                                    "#DEFF21", 
+                                                    4.157303370786517, 
+                                                    "#E7FF18", 
+                                                    4.185393258426966, 
+                                                    "#F2FF0D", 
+                                                    4.213483146067416, 
+                                                    "#FDFF02", 
+                                                    4.241573033707866, 
+                                                    "#FFF900", 
+                                                    4.269662921348314, 
+                                                    "#FFED00", 
+                                                    4.297752808988764, 
+                                                    "#FFE300", 
+                                                    4.325842696629214, 
+                                                    "#FFD900", 
+                                                    4.353932584269662, 
+                                                    "#FFCF00", 
+                                                    4.382022471910112, 
+                                                    "#FFC500", 
+                                                    4.410112359550562, 
+                                                    "#FFBB00", 
+                                                    4.438202247191011, 
+                                                    "#FFB000", 
+                                                    4.466292134831461, 
+                                                    "#FFA600", 
+                                                    4.49438202247191, 
+                                                    "#FF9C00", 
+                                                    4.52247191011236, 
+                                                    "#FF9200", 
+                                                    4.550561797752809, 
+                                                    "#FF8800", 
+                                                    4.578651685393258, 
+                                                    "#FF7F00", 
+                                                    4.606741573033708, 
+                                                    "#FF7400", 
+                                                    4.634831460674157, 
+                                                    "#FF6A00", 
+                                                    4.662921348314606, 
+                                                    "#FF6000", 
+                                                    4.691011235955056, 
+                                                    "#FF5600", 
+                                                    4.719101123595506, 
+                                                    "#FF4C00", 
+                                                    4.747191011235955, 
+                                                    "#FF4100", 
+                                                    4.775280898876405, 
+                                                    "#FF3700", 
+                                                    4.8033707865168545, 
+                                                    "#FF2D00", 
+                                                    4.831460674157303, 
+                                                    "#FF2300", 
+                                                    4.859550561797753, 
+                                                    "#FF1900", 
+                                                    4.8876404494382015, 
+                                                    "#FF0E00", 
+                                                    4.915730337078651, 
+                                                    "#FF0300", 
+                                                    4.943820224719101, 
+                                                    "#FB0000", 
+                                                    4.97191011235955, 
+                                                    "#EF0000", 
+                                                    5, 
+                                                    "#E50000"
+                                                ]
+                                            ], 
+                                            "fill-outline-color": "hsla(0, 1%, 16%, 0.76)"
+                                        }, 
+                                        "source": "mapbox://atlasai.aggregates_public", 
+                                        "source-layer": "aggregates_public", 
+                                        "type": "fill"
+                                    }
+                                }, 
+                                "maxZoom": 15, 
+                                "minZoom": 2.0, 
+                                "period": 1
+                            }
+                        ], 
+                        "periods": [
+                            {
+                                "id": 1, 
+                                "name": "2016"
+                            }
+                        ]
+                    }, 
+                    "name": "Maize Yield"
+                }
+            ]
+        }
+    ]
+}

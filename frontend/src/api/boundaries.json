@@ -1,0 +1,37 @@
+{
+  "layers": [
+    {
+      "id": 0,
+      "name": "Pixel",
+       "mapbox": {
+        "id": "africa_line_country"
+      }
+    },
+    {
+      "id": 1,
+      "name": "District",
+      "mapbox": {
+        "id": "africa_line_canton"
+      }
+    },
+    {
+      "id": 2,
+      "name": "State",
+            "mapbox": {
+        "id": "africa_line_state"
+      }
+
+    },
+    {
+      "id": 3,
+      "name": "Country",
+       "mapbox": {
+        "id": "africa_line_country"
+      }
+    }
+  ],
+  "defaults": {
+    "name": "Africa boarders",
+    "type": "regular"
+  }
+}

@@ -1,3 +1,3 @@
 export default {
-    mapboxToken: "pk.eyJ1IjoiZ2VvcmdlLWF6emFyaSIsImEiOiJjamppdXBlNWIwNTBjM3B1cjUya29ibTBhIn0.x_64AxbYiBn_840jPNq4TQ",
+    mapboxToken: "pk.eyJ1IjoiYXRsYXNhaSIsImEiOiJjanN6NWQ1aTcwMW1xNDNyNDQ1NzFueTY4In0.niqWjldjdp5O7WDFOfs88A",
 };
